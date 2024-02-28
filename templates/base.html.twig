@@ -2,12 +2,32 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Trans" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all" />
+            <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" type="text/css" media="all" />
+            <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+            <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
         {% endblock %}
 
         {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
+            <script type="text/javascript" src=""></script>
+            <script src="{{ asset('js/SmoothScroll.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/move-top.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/easing.js') }}"></script>
+            <script src="{{ asset('js/responsiveslides.min.js') }}"></script>
+            <script src="{{ asset('js/simplePlayer.js') }}"></script>
+            <script src="{{ asset('js/waypoints.min.js') }}"></script>
+            <script src="{{ asset('js/counterup.min.js') }}"></script>
+            <script defer src="{{ asset('js/jquery.flexslider.js') }}"></script>
+            <script defer src="{{ asset('js/main.js') }}"></script>
         {% endblock %}
     </head>
     <body>
